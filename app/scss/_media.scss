@@ -1,0 +1,292 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	// .video-border{
+	// 	display: none;
+	// }
+	.btn-search-div{
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.main-logo {
+		text-align: center;
+		margin-top: 10px;
+	}
+	.video-border{
+		margin-top: 40px;
+}
+.urls__more_inforamiton{
+	margin-top: 30px;
+}
+.stats-section{
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+.slick-prev{
+		
+		width: 50px;
+		left: 0;
+		z-index: 55;
+		position: absolute;
+		left: -37px;
+		top: 44%;
+		display: block;
+		padding: 0;
+		// transform: translate(0, -160%);
+		cursor: pointer;
+		border:solid 5px white;
+		border-radius: 50%;
+		outline: none;
+	
+	}
+	
+.slick-next{
+		width: 50px;
+		left: -37px;
+		z-index: 55;
+		position: absolute;
+		top: 56%;
+		display: block;
+		padding: 0;
+		// transform: translate(0, -50%);
+		cursor: pointer;
+		border: none;
+		outline: none;
+		border:solid 5px white;
+		border-radius: 50%;
+		
+	}
+	.photo-gallery{
+		&__title{
+			text-align: center;
+			h2{
+				font-size: 30px;
+				font-family: "SemiBold";
+				font-weight: bold;
+				margin-top: 10px;
+			}
+			p{
+				font-size: 18px;
+				margin-bottom: 10px;
+			}
+		}
+		
+	}
+	.feedback__carousel_quote{
+		font-size: 16px;
+		padding: 0px 10px;
+		img{
+			display: none;
+			
+		}
+	}
+	.prev_quot {
+		left: 40%;
+		bottom: -70px;
+	}
+	.next_quot {
+		left: 60%;
+		bottom: -70px;
+	}
+
+	.footer-subscribe__wrapper {
+		justify-content:center;
+	}
+	.footer-subscribe__email {
+		margin-bottom: 10px;
+	}
+	.midle-row{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.midle-section-col-1-w{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+
+	}
+	.midle-section-col-2-w{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+
+	}
+	.midle-section-col-3-w{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+
+	}
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+.stats-section{
+	
+	.col{-webkit-box-flex: 0;
+		-webkit-flex: 0 0 100%;
+				-ms-flex: 0 0 100%;
+						flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+}
+.slick-prev{
+	
+	width: 50px;
+	left: 0;
+	z-index: 55;
+	position: absolute;
+	left: -15px;
+	top: 40%;
+	display: block;
+	padding: 0;
+	// transform: translate(0, -160%);
+	cursor: pointer;
+	border:solid 5px white;
+	border-radius: 50%;
+	outline: none;
+
+}
+.slick-next{
+	width: 50px;
+	left: -15px;
+	z-index: 55;
+	position: absolute;
+	top: 60%;
+	display: block;
+	padding: 0;
+	// transform: translate(0, -50%);
+	cursor: pointer;
+	border: none;
+	outline: none;
+	border:solid 5px white;
+	border-radius: 50%;
+	
+}
+
+
+
+.new-select-style-wpandyou{
+		margin: auto;
+		margin-top: 10px;
+		}
+.select-group{
+	padding-top: 10px;
+}
+.midle-row{
+  padding-bottom: 50px;
+  padding-top: 30px;
+	h2{
+		margin-top: 20px;
+		font-size: 17px;
+		font-family: Poppins-SemiBold , sans-serif;
+		font-weight: 600;
+		color: black;
+		
+	}
+	p{
+		font-size: 13px;
+		font-family: Poppins-Regular, sans-serif;
+		color: black;
+		line-height: 19px;
+		
+	}
+	a{
+		color: $accent;
+		font-size: 13px;
+		font-family: Poppins-Regular, sans-serif;
+		text-decoration: none;
+	}
+}
+.vertical-center-4{
+/////////////
+}
+.footer-subscribe__email {
+  font-size: 20px;
+  &::placeholder {
+    padding-left: 5px;
+    
+  }
+ 
+}
+.footer-subscribe__btn {
+  padding: 10px 70px;
+  font-size: 20px;
+  font-family: "Poppins-Medium";
+  color: #6b53ff;
+  background-color: white;
+  border-radius: 5px;
+  flex: 0 3 40%;
+}
+.posts_post_title{
+
+  p{
+    font-size: 16px;
+    font-family: "Poppins-Regular";
+    margin: 0px;
+  }
+  span{
+    font-size: 16px;
+    font-family: "Poppins-SemiBold";
+  }
+}
+.popolar__posts_post{
+  img{
+    max-width:100%;
+  }
+}
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+	.container{
+		padding: 0;
+	}
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+	.medal-w{
+		max-width: 27%;
+	}
+	.businessman-w{
+		max-width:23%;
+	}
+	.cup-coffe-w{
+		max-width: 26%;
+	}
+	.home-w{
+		max-width: 24%;
+	}
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
